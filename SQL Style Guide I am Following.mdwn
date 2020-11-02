@@ -4,7 +4,7 @@
 
 
 # Logistics
-- Indents should be four spaces
+- Start first column you selected from a newline after 'select' keyword. Indents should be four spaces
 - Lines of SQL should be no longer than 80 characters
 - Field names and function names should all be lowercase
 - Orderding and grouping by a number is preferred. Note that if you are grouping by more than a few columns, it may be worth revisiting your model design.
@@ -45,6 +45,9 @@ select * from filtered_events
 
 # Functions
 
+
+
+# Example SQL
 
 References:
 1. https://github.com/fishtown-analytics/corp/blob/master/dbt_coding_conventions.md#sql-style-guide
