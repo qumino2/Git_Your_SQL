@@ -25,4 +25,4 @@ select
     seat_cnt
 from Sequence 
 where seat_cnt = (select max(seat_cnt
-                  from Sequence)
+                  from Sequence);

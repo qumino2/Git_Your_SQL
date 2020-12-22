@@ -13,3 +13,5 @@ select std_id,
 from Studentclub
 group by std_id;
 
+
+
