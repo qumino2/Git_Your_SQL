@@ -52,3 +52,20 @@ final as (
 )
 
 select * from final
+
+-- exists
+select *
+from Class_A A
+where exists (
+        select *
+        from Class_B B
+        where A.id = B.id
+);
+
+-- in
+select *
+from Class_A 
+where id in (
+            select id
+            from Class_B
+);
