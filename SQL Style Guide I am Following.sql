@@ -69,3 +69,11 @@ where id in (
             select id
             from Class_B
 );
+
+-- 嵌套函数
+select round(
+    coalesce(
+    (select count(distinct requester_id ,accepter_id) from RequestAccepted) / 
+    (select count(distinct sender_id ,send_to_id) from FriendRequest)
+    ,0)
+    ,2) as accept_rate ;
