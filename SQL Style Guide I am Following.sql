@@ -15,7 +15,7 @@ some_cte_agg as (
 			max(field_5) as max_field_5
 
 	from my_data
-	group by 1
+	group by id --不要用数字的原因是我写 SQL 会先处理 group by
 
 ),
 

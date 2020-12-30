@@ -20,7 +20,7 @@ select
             then name
          else null
     end) as Asia,
-
+git
     max(case when continent = "Europe"
             then name
          else null
